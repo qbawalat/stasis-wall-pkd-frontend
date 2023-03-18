@@ -1,8 +1,6 @@
 function App() {
   return (
-    <div className="App">
-      Hiya
-    </div>
+    <h1 className="text-3xl font-bold underline text-center text-red-500">Tailwind party!</h1>
   )
 }
 
