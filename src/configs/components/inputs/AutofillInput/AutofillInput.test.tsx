@@ -4,6 +4,6 @@ import AutofillInput from './AutofillInput';
 describe('AutofillInput', () => {
   it('renders input', () => {
     const { getByText } = render(<AutofillInput />);
-    expect(getByText('chuj')).toBeInTheDocument();
+    expect(getByText('stasis wall')).toBeInTheDocument();
   });
 });
