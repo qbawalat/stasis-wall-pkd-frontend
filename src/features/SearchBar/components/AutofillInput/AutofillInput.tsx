@@ -1,16 +1,25 @@
 import { ControlledInput } from './components/ControlledInput';
-import { AutofillSuggestions } from './components/AutofillSuggestions';
+import { DynamicSuggestions } from './components/DynamicSuggestions';
+import { FunctionComponent } from 'react';
 
-const AutofillInput = () => {
+const AutofillInput: FunctionComponent & {
+  TextInput: FunctionComponent;
+  Suggestions: FunctionComponent;
+} = () => {
   return (
+    // eslint-disable-next-line react/prop-types
     <div>
-      <AutofillInput.TextInput />
-      <AutofillInput.Suggestions />
+      <div>
+        <AutofillInput.TextInput />
+      </div>
+      <div>
+        <AutofillInput.Suggestions />
+      </div>
     </div>
   );
 };
 
 AutofillInput.TextInput = ControlledInput;
-AutofillInput.Suggestions = AutofillSuggestions;
+AutofillInput.Suggestions = DynamicSuggestions;
 
 export default AutofillInput;

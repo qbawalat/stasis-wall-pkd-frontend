@@ -1,13 +1,13 @@
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 import AutofillInput from './components/AutofillInput/AutofillInput';
 import { FormProvider, useForm } from 'react-hook-form';
 import { SearchSubmit } from './components/SearchSubmit';
 
-interface FormValues {
+export interface FormValues {
   autofillInput: string;
 }
 
-const SearchBar = () => {
+const SearchBar: FunctionComponent & { Input: FunctionComponent; Submit: FunctionComponent } = () => {
   const useFormMethods = useForm<FormValues>({ defaultValues: { autofillInput: '' } });
   return (
     <FormProvider {...useFormMethods}>
@@ -15,10 +15,11 @@ const SearchBar = () => {
         onSubmit={useFormMethods.handleSubmit((values) => {
           alert(values.autofillInput);
         })}
+        autoComplete={'off'}
       >
-        <main className={'flex flex-row'}>
+        <main className={'flex flex-row gap-8'}>
           <SearchBar.Input />
-          <div className={''}>
+          <div>
             <SearchBar.Submit />
           </div>
         </main>
