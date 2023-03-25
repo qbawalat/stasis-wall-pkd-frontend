@@ -3,7 +3,7 @@ import { AutofillSuggestions } from './components/AutofillSuggestions';
 
 const AutofillInput = () => {
   return (
-    <div className={'flex'}>
+    <div>
       <AutofillInput.TextInput />
       <AutofillInput.Suggestions />
     </div>

@@ -1,8 +1,10 @@
 import SearchBar from './features/SearchBar/SearchBar';
+import Menu from './features/Menu/Menu';
 
 function App() {
   return (
-    <div>
+    <div className={'flex flex-col'}>
+      <Menu />
       <SearchBar />
     </div>
   );

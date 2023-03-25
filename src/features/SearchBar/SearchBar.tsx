@@ -16,8 +16,12 @@ const SearchBar = () => {
           alert(values.autofillInput);
         })}
       >
-        <SearchBar.Input />
-        <SearchBar.Submit />
+        <main className={'flex flex-row'}>
+          <SearchBar.Input />
+          <div className={''}>
+            <SearchBar.Submit />
+          </div>
+        </main>
       </form>
     </FormProvider>
   );
