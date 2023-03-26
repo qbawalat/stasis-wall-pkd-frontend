@@ -12,5 +12,3 @@ export default defineConfig({
     setupFiles: './src/configs/test/testsSetup.ts',
   },
 });
-import svgr from 'vite-plugin-svgr';
-
