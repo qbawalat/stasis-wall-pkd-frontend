@@ -7,7 +7,7 @@ export const DynamicSuggestions: FunctionComponent = () => {
   const inputValue = watch('autofillInput');
   const isDirty = getFieldState('autofillInput').isDirty;
   return isDirty ? (
-    <div className={'bg-primary-color-1'}>
+    <div className={'bg-primary-color'}>
       <ul>
         {INPUT_OPTIONS.filter(isIncludedInSuggestions(inputValue)).map((option) => (
           <li
@@ -29,4 +29,4 @@ export const DynamicSuggestions: FunctionComponent = () => {
 const isIncludedInSuggestions = (fieldValue: string) => (option: string) =>
   option.toLowerCase().includes(fieldValue.toLowerCase()) && option.toLowerCase() !== fieldValue.toLowerCase();
 
-const INPUT_OPTIONS = ['stasis', 'wall', 'goat'];
+const INPUT_OPTIONS = ['programista', 'informatyk', 'marketingowiec', 'it support', 'it'];

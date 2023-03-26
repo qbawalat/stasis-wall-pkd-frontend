@@ -2,5 +2,5 @@
 @tailwind components;
 @tailwind utilities;
 body {
-    background-color: rgba(35, 0, 66, 0.7);
+    background: radial-gradient(100% 10506.25% at 0% 0%, #230042 0%, #583377 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
 }

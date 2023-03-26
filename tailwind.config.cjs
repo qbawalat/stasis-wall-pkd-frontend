@@ -7,8 +7,9 @@ module.exports = {
     extend: {
       minWidth: {'24': '6rem'},
       colors: {
-        'primary-color-1': '#FD4D4D',
-
+        'primary-color': '#FD4D4D',
+        'secondary-color': '#ffffff',
+        'tertiary-color': '#AF8CCE',
       },
     },
   },
