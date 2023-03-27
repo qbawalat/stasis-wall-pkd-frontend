@@ -5,7 +5,6 @@ function App() {
   return (
     <div className={'flex flex-col'}>
       <Menu />
-
       <div className={'mt-32'}>
         <MainPanel />
       </div>

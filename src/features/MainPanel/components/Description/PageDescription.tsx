@@ -1,7 +1,7 @@
 import { FunctionComponent } from 'react';
 import HeaderWithSubHeader from '../../../../common/components/HeaderWithSubHeader';
 
-const Description: FunctionComponent = () => {
+const PageDescription: FunctionComponent = () => {
   return (
     <HeaderWithSubHeader
       header={{
@@ -15,4 +15,4 @@ const Description: FunctionComponent = () => {
     />
   );
 };
-export default Description;
+export default PageDescription;
