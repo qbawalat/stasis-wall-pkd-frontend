@@ -4,7 +4,7 @@ import SearchBar from './components/SearchBar/SearchBar';
 
 const MainPanel: FunctionComponent = () => {
   return (
-    <div className={'flex flex-col items-center'}>
+    <div className={'flex flex-col items-center gap-8'}>
       <div>
         <Description />
       </div>

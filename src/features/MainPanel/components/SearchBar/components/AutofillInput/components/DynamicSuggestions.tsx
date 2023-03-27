@@ -7,7 +7,7 @@ export const DynamicSuggestions: FunctionComponent = () => {
   const inputValue = watch('autofillInput');
   const isDirty = getFieldState('autofillInput').isDirty;
   return isDirty ? (
-    <div className={'bg-primary-color'}>
+    <div className={'bg-primary-color rounded-b-xl p-1 text-center'}>
       <ul>
         {INPUT_OPTIONS.filter(isIncludedInSuggestions(inputValue)).map((option) => (
           <li
@@ -16,7 +16,7 @@ export const DynamicSuggestions: FunctionComponent = () => {
               setValue('autofillInput', option);
             }}
             key={option}
-            className={'text-gray-50 text-2xl cursor-pointer hover:text-green-400'}
+            className={'text-gray-50 text-2xl cursor-pointer hover:text-green-400 '}
           >
             {option}
           </li>

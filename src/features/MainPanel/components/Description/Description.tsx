@@ -2,7 +2,7 @@ import { FunctionComponent } from 'react';
 
 const Description: FunctionComponent = () => {
   return (
-    <div className={'flex flex-col items-center'}>
+    <div className={'flex flex-col items-center gap-2'}>
       <div>
         <h1 className={'text-3xl font-bold text-primary-color'}>
           Wyszukaj numer PKD <span className={'text-secondary-color'}>pod swój typ działalności</span>
