@@ -13,7 +13,7 @@ const HeaderWithSubHeader: FunctionComponent<Props> = ({ containerStyles, header
         <h1 className={`text-3xl font-bold text-primary-color ${header.styles}`}>{header.element}</h1>
       </div>
       <div>
-        <h2 className={`text-1xl text-tertiary-color ${subHeader.styles}`}>{subHeader.element}</h2>
+        <h2 className={`text-base text-tertiary-color ${subHeader.styles}`}>{subHeader.element}</h2>
       </div>
     </div>
   );
