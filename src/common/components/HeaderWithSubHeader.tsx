@@ -1,6 +1,6 @@
 import { FunctionComponent } from 'react';
 
-type ElementProps = { element: JSX.Element; styles?: string };
+type ElementProps = { element: JSX.Element | string; styles?: string };
 type Props = {
   header: ElementProps;
   subHeader: ElementProps;

@@ -4,6 +4,7 @@ import SearchBar from './components/SearchBar/SearchBar';
 import { Tip } from './components/Tip/Tip';
 import { FormProvider, useForm } from 'react-hook-form';
 import { FormValues } from './types/FormTypes';
+import SubheadersSection from './components/SubheadersSection/SubheadersSection';
 
 const MainPanel: FunctionComponent = () => {
   const useFormMethods = useForm<FormValues>({ defaultValues: { autofillInput: '' } });
@@ -18,6 +19,9 @@ const MainPanel: FunctionComponent = () => {
         </div>
         <div>{<Tip />}</div>
       </FormProvider>
+      <div>
+        <SubheadersSection />
+      </div>
     </div>
   );
 };
