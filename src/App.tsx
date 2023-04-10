@@ -1,9 +1,13 @@
-import SearchBar from './features/SearchBar/SearchBar';
+import Menu from './features/Menu/Menu';
+import MainPanel from './features/MainPanel/MainPanel';
 
 function App() {
   return (
-    <div>
-      <SearchBar />
+    <div className='flex flex-col'>
+      <Menu />
+      <div className={'mt-32'}>
+        <MainPanel />
+      </div>
     </div>
   );
 }
