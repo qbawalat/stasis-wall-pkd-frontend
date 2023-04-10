@@ -3,7 +3,7 @@ import MainPanel from './features/MainPanel/MainPanel';
 
 function App() {
   return (
-    <div className={'flex flex-col'}>
+    <div className='flex flex-col'>
       <Menu />
       <div className={'mt-32'}>
         <MainPanel />

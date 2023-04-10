@@ -17,7 +17,9 @@ const MainPanel: FunctionComponent = () => {
         <div>
           <SearchBar />
         </div>
-        <div>{<Tip />}</div>
+        <div>
+            <Tip />
+        </div>
       </FormProvider>
       <div>
         <SubheadersSection />
