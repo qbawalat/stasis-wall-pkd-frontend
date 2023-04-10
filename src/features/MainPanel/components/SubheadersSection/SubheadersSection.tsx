@@ -25,6 +25,7 @@ const SubheadersSection: FunctionComponent = () => {
   );
 };
 
+// TODO import json files instead
 const MOCK = {
   sections: [
     {

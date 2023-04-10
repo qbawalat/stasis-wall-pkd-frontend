@@ -34,7 +34,6 @@ const DynamicallyColoredText: FunctionComponent<{ wholeText: string; textPart: s
   const [index, setIndex] = useState(0);
   useEffect(() => {
     const lastIndex = wholeText.indexOf(textPart) + textPart.length;
-    console.log('ej', lastIndex);
     setIndex(lastIndex);
   }, [textPart]);
   return (

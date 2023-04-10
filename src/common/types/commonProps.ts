@@ -1,5 +1,5 @@
 import { PropsWithChildren } from 'react';
 
-export interface CommonProps extends PropsWithChildren {
+export type CommonProps = {
   className?: string;
-}
+} & PropsWithChildren;
