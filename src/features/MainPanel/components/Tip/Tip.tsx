@@ -28,7 +28,9 @@ export const Tip: FunctionComponent = () => {
             onClick={() => {
               setValue('autofillInput', tag);
             }}
-            className={'border rounded-3xl text-xs bg-transparent text-primary-color border-primary-color p-2'}
+            className={
+              'border-2 rounded-3xl  text-xs bg-transparent text-primary-color border-primary-color p-2 hover:bg-primary-color hover:text-secondary-color'
+            }
           >
             {tag}
           </button>
