@@ -3,23 +3,24 @@ import HeaderWithSubHeader from '../../../../common/components/HeaderWithSubHead
 
 const SubheadersSection: FunctionComponent = () => {
   return (
-    <div>
+    <div className={'text-center text-secondary-color '}>
       {MOCK.sections.map(({ title, description }) => (
-        <HeaderWithSubHeader
-          key={title}
-          header={{ element: title }}
-          subHeader={{
-            element: (
-              <>
-                {description.map((desc) => (
-                  <p key={desc} className={'mt-4'}>
-                    {desc}
-                  </p>
-                ))}
-              </>
-            ),
-          }}
-        />
+        <div className={'mt-16'} key={title}>
+          <HeaderWithSubHeader
+            header={{ element: title }}
+            subHeader={{
+              element: (
+                <>
+                  {description.map((desc) => (
+                    <p key={desc} className={'mt-4'}>
+                      {desc}
+                    </p>
+                  ))}
+                </>
+              ),
+            }}
+          />
+        </div>
       ))}
     </div>
   );
