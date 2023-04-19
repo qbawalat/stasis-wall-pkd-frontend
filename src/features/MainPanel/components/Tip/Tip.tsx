@@ -10,19 +10,7 @@ export const Tip: FunctionComponent = () => {
         <p className={'text-tertiary-color text-xs'}>Najczęściej wyszukiwane numery PKD dla:</p>
       </div>
       <div className={'flex flex-row gap-3'}>
-        {[
-          'informatyk',
-          'miodozer',
-          'moczymorda',
-          'social',
-          'media',
-          'grafika',
-          'SEO',
-          'programista',
-          'marketing',
-          'google ads',
-          'frontend',
-        ].map((tag) => (
+        {TAGS_MOCK.map((tag) => (
           <button
             key={tag}
             onClick={() => {
@@ -39,3 +27,14 @@ export const Tip: FunctionComponent = () => {
     </div>
   );
 };
+const TAGS_MOCK = [
+  'informatyk',
+  'social',
+  'media',
+  'grafika',
+  'SEO',
+  'programista',
+  'marketing',
+  'google ads',
+  'frontend',
+];
