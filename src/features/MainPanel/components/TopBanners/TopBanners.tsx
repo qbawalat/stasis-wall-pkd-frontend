@@ -4,10 +4,10 @@ import { FunctionComponent } from 'react';
 
 export const TopBanners: FunctionComponent = () => (
   <div className={'flex flex-row gap-3'}>
-    <div className={'flex flex-row '}>
+    <div>
       <img alt="firmbee company banner" src={firstBannerPath} />
     </div>
-    <div className={'flex flex-row '}>
+    <div>
       <img alt="registrar's office banner" src={secondBannerPath} />
     </div>
   </div>

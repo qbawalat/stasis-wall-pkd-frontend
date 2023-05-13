@@ -6,6 +6,7 @@ import { FormProvider, useForm } from 'react-hook-form';
 import { FormValues } from './types/FormTypes';
 import SubheadersSection from './components/SubheadersSection/SubheadersSection';
 import { TopBanners } from './components/TopBanners/TopBanners';
+import BottomBanner from './components/BottomBanner/BottomBanner';
 
 const MainPanel: FunctionComponent = () => {
   const useFormMethods = useForm<FormValues>({ defaultValues: { autofillInput: '' } });
@@ -27,6 +28,9 @@ const MainPanel: FunctionComponent = () => {
       </div>
       <div className={'w-5/12'}>
         <SubheadersSection />
+      </div>
+      <div className={'w-7/12'}>
+        <BottomBanner />
       </div>
     </div>
   );
