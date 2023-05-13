@@ -1,9 +1,10 @@
 import { FunctionComponent } from 'react';
 import HeaderWithSubHeader from '../../../../common/components/HeaderWithSubHeader';
+import TextSectionWrapper from '../common/TextSectionWrapper';
 
 const SubheadersSection: FunctionComponent = () => {
   return (
-    <div className={'text-center text-secondary-color '}>
+    <TextSectionWrapper>
       {MOCK.sections.map(({ title, description }) => (
         <div className={'mt-16'} key={title}>
           <HeaderWithSubHeader
@@ -22,7 +23,7 @@ const SubheadersSection: FunctionComponent = () => {
           />
         </div>
       ))}
-    </div>
+    </TextSectionWrapper>
   );
 };
 

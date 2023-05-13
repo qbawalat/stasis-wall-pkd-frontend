@@ -7,33 +7,47 @@ import { FormValues } from './types/FormTypes';
 import SubheadersSection from './components/SubheadersSection/SubheadersSection';
 import { TopBanners } from './components/TopBanners/TopBanners';
 import BottomBanner from './components/BottomBanner/BottomBanner';
+import HeaderWithSubHeader from '../../common/components/HeaderWithSubHeader';
+import TextSectionWrapper from './components/common/TextSectionWrapper';
 
 const MainPanel: FunctionComponent = () => {
   const useFormMethods = useForm<FormValues>({ defaultValues: { autofillInput: '' } });
   return (
     <div className={'flex flex-col items-center gap-8'}>
-      <div>
-        <PageDescription />
-      </div>
+      <PageDescription />
       <FormProvider {...useFormMethods}>
-        <div>
-          <SearchBar />
-        </div>
-        <div>
-          <Tip />
-        </div>
+        <SearchBar />
+        <Tip />
       </FormProvider>
-      <div className={'mt-32 w-7/12 '}>
+      <div className={'mt-32 ' + imageSectionWidth}>
         <TopBanners />
       </div>
-      <div className={'w-5/12'}>
+      <div className={textSectionWidth}>
         <SubheadersSection />
       </div>
-      <div className={'w-7/12'}>
+      <div className={imageSectionWidth}>
         <BottomBanner />
+      </div>
+      <div className={textSectionWidth}>
+        <TextSectionWrapper>
+          <HeaderWithSubHeader
+            header={{ element: <span> Typy podatków dla działalności gospodarczych</span> }}
+            subHeader={{
+              element: (
+                <p className={'mt-4'}>
+                  W Polsce istnieją różne typy rozliczeń podatkowych dla działalności gospodarczych, które są stosowane
+                  w zależności od rodzaju działalności i dochodów uzyskiwanych przez przedsiębiorców. Poniżej
+                  przedstawiam najważniejsze typy rozliczeń podatkowych dla działalności gospodarczych w Polsce:
+                </p>
+              ),
+            }}
+          />
+        </TextSectionWrapper>
       </div>
     </div>
   );
 };
+const imageSectionWidth = 'w-7/12';
+const textSectionWidth = 'w-5/12';
 
 export default MainPanel;
