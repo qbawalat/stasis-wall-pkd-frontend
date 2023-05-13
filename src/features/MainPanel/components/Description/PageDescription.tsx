@@ -11,7 +11,13 @@ const PageDescription: FunctionComponent = () => {
           </>
         ),
       }}
-      subHeader={{ element: <> Poznaj numer dla swojej działalności oraz opcje rozliczenia podatkowego</> }}
+      subHeader={{
+        element: (
+          <span className={'text-tertiary-color'}>
+            Poznaj numer dla swojej działalności oraz opcje rozliczenia podatkowego
+          </span>
+        ),
+      }}
     />
   );
 };

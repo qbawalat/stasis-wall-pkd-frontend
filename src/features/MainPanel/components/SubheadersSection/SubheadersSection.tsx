@@ -11,13 +11,13 @@ const SubheadersSection: FunctionComponent = () => {
             header={{ element: title }}
             subHeader={{
               element: (
-                <>
+                <div className={'opacity-80'}>
                   {description.map((desc) => (
                     <p key={desc} className={'mt-4'}>
                       {desc}
                     </p>
                   ))}
-                </>
+                </div>
               ),
             }}
           />
