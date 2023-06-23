@@ -3,4 +3,10 @@
 @tailwind utilities;
 body {
     background: radial-gradient(100% 10506.25% at 0% 0%, #230042 0%, #583377 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    font-family: "Light";
+}
+
+@font-face {
+    font-family: "Light";
+    src: local("MADE Outer Sans Light PERSONAL USE"), url("./fonts/MADE Outer Sans Light PERSONAL USE.otf") format('truetype');
 }
