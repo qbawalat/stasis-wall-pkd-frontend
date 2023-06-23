@@ -8,5 +8,5 @@ body {
 
 @font-face {
     font-family: "Light";
-    src: local("MADE Outer Sans Light PERSONAL USE"), url("./fonts/MADE Outer Sans Light PERSONAL USE.otf") format('truetype');
+    src: local("SpaceGrotesk"), url("./fonts/SpaceGrotesk-Light.ttf") format('truetype');
 }
