@@ -14,6 +14,9 @@ module.exports = {
         secondary: '#0F002E',
         orange: '#FD4D4D',
       },
+      backgroundColor: {
+        secondary: '#0F002E',
+      },
     },
   },
   plugins: [],
