@@ -2,7 +2,7 @@ import { FunctionComponent } from 'react';
 
 interface Props {
   label: string;
-  onClick?: () => void;
+  onClick?: VoidFunction;
 }
 
 const Button: FunctionComponent<Props> = ({ label, onClick }) => (

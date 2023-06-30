@@ -1,5 +1,5 @@
 import { FunctionComponent } from 'react';
-import HeaderWithSubHeader from '../../../../common/components/HeaderWithSubHeader';
+import { HeaderWithSubHeader } from '../../../../common/components';
 import TextSectionWrapper from '../common/TextSectionWrapper';
 
 const SubheadersSection: FunctionComponent = () => {
