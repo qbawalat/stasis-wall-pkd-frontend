@@ -1,8 +1,9 @@
-import React from 'react';
 import { ReactComponent as Logo } from '../../assets/icons/footer-logo.svg';
-import FooterItem from './components/FooterItem';
+import Politics from './components/Politics/Politics';
+import Contact from './components/Contact/Contact';
+import { ReactElement } from 'react';
 
-const Footer = () => {
+const Footer = (): ReactElement => {
   const scrollToTop = () => window.scrollTo({ top: 0 });
 
   return (
@@ -12,21 +13,12 @@ const Footer = () => {
           <li onClick={scrollToTop}>
             <Logo />
           </li>
-          {contact.map((el) => (
-            <FooterItem text={el} />
-          ))}
+          <Contact />
         </ul>
-        <ul className="flex flex-row justify-around items-center mt-6 gap-12">
-          {politics.map((el) => (
-            <FooterItem text={el} />
-          ))}
-        </ul>
+        <Politics />
       </div>
     </div>
   );
 };
 
 export default Footer;
-
-const contact = ['Wyszukiwarka PKD', 'O nas', 'Kontakt'];
-const politics = ['Polityka prywatności', 'Polityka plików cookies'];

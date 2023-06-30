@@ -8,8 +8,8 @@ function App() {
       <Menu />
       <div className={'mt-32'}>
         <MainPanel />
+        <Footer />
       </div>
-      <Footer />
     </div>
   );
 }
