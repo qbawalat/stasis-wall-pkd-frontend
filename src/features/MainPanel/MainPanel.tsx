@@ -8,6 +8,7 @@ import SubheadersSection from './components/SubheadersSection/SubheadersSection'
 import { TopBanners } from './components/TopBanners/TopBanners';
 import BottomBanner from './components/BottomBanner/BottomBanner';
 import TaxTypes from './components/TaxTypes/TaxTypes';
+import NavigationButton from './components/NavigationButton/NavigationButton';
 
 const MainPanel: FunctionComponent = () => {
   const useFormMethods = useForm<FormValues>({ defaultValues: { autofillInput: '' } });
@@ -30,6 +31,7 @@ const MainPanel: FunctionComponent = () => {
       <div className={'mt-12 ' + textSectionWidth}>
         <TaxTypes />
       </div>
+      <NavigationButton />
     </div>
   );
 };

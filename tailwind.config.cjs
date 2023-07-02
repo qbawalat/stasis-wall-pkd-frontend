@@ -8,6 +8,11 @@ module.exports = {
         'primary-color': '#FD4D4D',
         'secondary-color': '#ffffff',
         'tertiary-color': '#AF8CCE',
+        'btn-text-color': '#230042',
+      },
+      backgroundColor: {
+        secondary: '#0F002E',
+        orange: '#FD4D4D',
       },
       backgroundColor: {
         secondary: '#0F002E',
